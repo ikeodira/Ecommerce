@@ -1,4 +1,5 @@
 import 'package:eccomerce_app/components/default_button.dart';
+import 'package:eccomerce_app/screens/home/home_screen.dart';
 import 'package:eccomerce_app/size_config.dart';
 import 'package:flutter/material.dart';
 
@@ -31,7 +32,9 @@ class Body extends StatelessWidget {
         SizedBox(
           width: SizeConfig.screenWidth * 0.6,
           child: DefaultButton(
-            press: () {},
+            press: () {
+              Navigator.pushNamed(context, HomeScreen.routeName);
+            },
             text: "Back to home",
           ),
         ),

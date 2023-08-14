@@ -1,6 +1,5 @@
 import "package:eccomerce_app/constants.dart";
 import "package:eccomerce_app/routes.dart";
-import "package:eccomerce_app/screens/otp/otp_screen.dart";
 import "package:eccomerce_app/screens/splash/splash_screen.dart";
 import "package:flutter/material.dart";
 
@@ -32,8 +31,8 @@ class App extends StatelessWidget {
           bodyMedium: TextStyle(color: kTextColor),
         ),
       ),
-      // initialRoute: SplashScreen.routeName,
-      initialRoute: OtpScreen.routeName,
+      initialRoute: SplashScreen.routeName,
+      // initialRoute: OtpScreen.routeName,
       routes: routes,
     );
   }
